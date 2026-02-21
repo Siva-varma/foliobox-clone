@@ -90,3 +90,19 @@ ScrollTrigger.matchMedia({
     gsap.to(window, {duration: 1, scrollTo: "#contact"});
   });
 });
+
+
+
+
+const menuIcon = document.querySelector('.nav-icon');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const closeIcon = document.querySelector('.close');
+
+
+menuIcon.addEventListener('click', () => {
+    mobileMenu.style.transform=`translateY(0px)`
+  });
+
+  closeIcon.addEventListener('click', () => {
+    mobileMenu.style.transform=`translateY(-500px)`
+  });
