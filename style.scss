@@ -20,7 +20,6 @@ body {
 #main {
   height: 100%;
   width: 100%;
-
 }
 
 #mouse-follower {
@@ -76,7 +75,7 @@ body {
   background: #141414;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
   #nav {
@@ -630,36 +629,36 @@ footer {
     display: none;
   }
 
-  .mobile-menu{
+  .mobile-menu {
     position: absolute !important;
     width: 100%;
-    top: 0px ;
+    top: 0px;
     left: 0px;
     background: #fff;
-    display:flex !important;
+    display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center;
-    gap:20px;
-    padding:40px;
+    gap: 20px;
+    padding: 40px;
     transform: translateY(-500px);
     transition: all 1s ease;
-    
-    .close{
+
+    .close {
       position: absolute;
-      top:20px;
+      top: 20px;
       right: 20px;
-      color:#000;
+      color: #000;
       font-size: 24px;
     }
-    a{
+    a {
       text-decoration: none;
-      color:#000;
+      color: #000;
       font-weight: 500;
     }
-    .btn{
+    .btn {
       background: #000;
-      color:#fff;
+      color: #fff;
     }
   }
 
@@ -667,178 +666,173 @@ footer {
     .links {
       display: none !important;
     }
-    .nav-icon{
+    .nav-icon {
       display: block !important;
       font-size: 24px;
     }
   }
 
-  #hero{
-    #hero-top{
-      #text{
+  #hero {
+    #hero-top {
+      #text {
         flex-direction: column;
-        .left{
+        .left {
           width: 100% !important;
-          h5{
+          h5 {
             font-size: 14px !important;
           }
-          h1{
+          h1 {
             font-size: 28px !important;
           }
         }
-        .right{
+        .right {
           width: 100% !important;
           margin-top: 20px;
         }
       }
 
-      #steps{
+      #steps {
         display: none !important;
       }
     }
 
-    #hero-bottom{
+    #hero-bottom {
       flex-direction: column;
-      padding:20px;
-      #left{
+      padding: 20px;
+      #left {
         width: 100%;
       }
     }
   }
 
-  #section-2{
-    #content{
+  #section-2 {
+    #content {
       flex-direction: column;
-      .left{
+      .left {
         width: 100%;
         padding: 0px;
-        h5{
+        h5 {
           font-size: 16px;
         }
-        h2{
+        h2 {
           font-size: 40px;
         }
       }
-      .right{
+      .right {
         width: 100%;
         padding: 0;
-        h5{
+        h5 {
           font-size: 16px;
           margin-top: 5px;
         }
-        div{
+        div {
           flex-direction: column;
-          p{
+          p {
             font-size: 15px;
             margin-bottom: 5px;
           }
-
         }
       }
     }
 
-    #gallery{
+    #gallery {
       flex-direction: column;
-      .img{
+      .img {
         width: 100%;
       }
     }
   }
 
-
-  #section-3{
-    #content{
+  #section-3 {
+    #content {
       flex-direction: column;
-      .left{
+      .left {
         width: 100%;
         padding: 0px;
-        h5{
+        h5 {
           font-size: 16px;
         }
-        h2{
+        h2 {
           font-size: 40px;
         }
       }
-      .right{
+      .right {
         width: 100%;
         padding: 0;
-        h5{
+        h5 {
           font-size: 16px;
           margin-top: 5px;
         }
-        div{
+        div {
           flex-direction: column;
-          p{
+          p {
             font-size: 15px;
             margin-bottom: 5px;
           }
-
         }
       }
     }
 
-    .project{
+    .project {
       flex-direction: column;
-      gap:10px;
-      .text{
+      gap: 10px;
+      .text {
         padding: 0;
       }
     }
-    .project:nth-child(2){
+    .project:nth-child(2) {
       flex-direction: column-reverse;
     }
   }
 
-  #section-4{
-     #content{
+  #section-4 {
+    #content {
       flex-direction: column;
-      .left{
+      .left {
         width: 100%;
         padding: 0px;
-        h5{
+        h5 {
           font-size: 16px;
         }
-        h2{
+        h2 {
           font-size: 40px;
         }
       }
-      .right{
+      .right {
         width: 100%;
         padding: 0;
-        h5{
+        h5 {
           font-size: 16px;
           margin-top: 5px;
         }
-        div{
+        div {
           flex-direction: column;
-          p{
+          p {
             font-size: 15px;
             margin-bottom: 5px;
           }
-
         }
       }
     }
 
-    #grid{
+    #grid {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      .img1{
+      .img1 {
         grid-column: 1/2;
-      grid-row: 1/2;
+        grid-row: 1/2;
       }
-      .card1{
+      .card1 {
         grid-column: 1/2;
-      grid-row: 2/3;
-      
+        grid-row: 2/3;
       }
-      .card2{
+      .card2 {
         grid-column: 1/2;
-      grid-row: 3/4;
+        grid-row: 3/4;
       }
-      .img2{
+      .img2 {
         grid-column: 1/2;
-      grid-row:4/5;
+        grid-row: 4/5;
       }
     }
   }

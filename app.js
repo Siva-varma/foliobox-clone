@@ -61,48 +61,45 @@ document.addEventListener("DOMContentLoaded", (event) => {
       stagger: 0.2,
     });
 
+  ScrollTrigger.matchMedia({
+    "(min-width: 769px)": function () {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#projects",
+            start: "top 50%",
+            end: "100% bottom",
+            scrub: true,
+          },
+        })
+        .from(".project .text", {
+          y: -500,
+          stagger: 1,
+        });
+    },
+  });
 
-ScrollTrigger.matchMedia({
-  "(min-width: 769px)": function () {
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: "#projects",
-        start: "top 50%",
-        end: "100% bottom",
-        scrub: true
-      }
-    }).from(".project .text", {
-      y: -500,
-      stagger: 1,
-    });
-  }
-});
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      gsap.to(window, {duration: 1, scrollTo: this.getAttribute('href')});
+      gsap.to(window, { duration: 1, scrollTo: this.getAttribute("href") });
     });
   });
 
-  document.querySelector('button').addEventListener('click', function(e) {
+  document.querySelector("button").addEventListener("click", function (e) {
     e.preventDefault();
-    gsap.to(window, {duration: 1, scrollTo: "#contact"});
+    gsap.to(window, { duration: 1, scrollTo: "#contact" });
   });
 });
 
+const menuIcon = document.querySelector(".nav-icon");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeIcon = document.querySelector(".close");
 
+menuIcon.addEventListener("click", () => {
+  mobileMenu.style.transform = `translateY(0px)`;
+});
 
-
-const menuIcon = document.querySelector('.nav-icon');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  const closeIcon = document.querySelector('.close');
-
-
-menuIcon.addEventListener('click', () => {
-    mobileMenu.style.transform=`translateY(0px)`
-  });
-
-  closeIcon.addEventListener('click', () => {
-    mobileMenu.style.transform=`translateY(-500px)`
-  });
+closeIcon.addEventListener("click", () => {
+  mobileMenu.style.transform = `translateY(-500px)`;
+});
