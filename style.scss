@@ -642,7 +642,7 @@ footer {
     gap: 20px;
     padding: 40px;
     transform: translateY(-500px);
-    transition: all 1s ease;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) ease;
 
     .close {
       position: absolute;
