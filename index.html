@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foliobox</title>
+    <title>Folio-box</title>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="main">
-      <!-- <div id="mouse-follower"></div> -->
+      <div id="mouse-follower"></div>
       <div id="hero">
         <div id="hero-top">
           <img class="hero-bg" src="./assets/hero-bg.avif" alt="" />
@@ -20,12 +20,13 @@
             <div id="nav">
               <h3 class="logo">Folioblox</h3>
               <div class="links">
-                <a class="link">Home</a>
-                <a class="link">About</a>
-                <a class="link">Projects</a>
-              <button class="btn">Get in Touch <i class="ri-arrow-right-line"></i></button>
-
+                <a class="link" href="#hero">Home</a>
+                <a class="link" href="#section-2">About</a>
+                <a class="link" href="#section-3">Projects</a>
+                <button class="btn"> Get in Touch <i class="ri-arrow-right-line"></i>
+                </button>
               </div>
+              <i  class="ri-menu-fill nav-icon"></i>
             </div>
             <div id="text">
               <div class="left">
@@ -98,16 +99,178 @@
 
             <div>
               <p>Let’s Build Something Meaningful Together</p>
-              <button class="btn">Get in Touch <i class="ri-arrow-right-line"></i></button>
+              <button class="btn">
+                Get in Touch <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="gallery">
+          <div class="img"><img src="./assets/g1.avif" alt="" /></div>
+          <div class="img"><img src="./assets/g2.avif" alt="" /></div>
+          <div class="img"><img src="./assets/g3.avif" alt="" /></div>
+        </div>
+      </div>
+
+      <div id="section-3">
+        <div id="content">
+          <div class="left">
+            <h5>Featured Projects</h5>
+            <h2>Designing Bold Brands That Leave a Lasting Impression</h2>
+          </div>
+          <div class="right">
+            <h5>
+              With a passion for clarity, aesthetics, and emotion-driven design,
+              I partner with founders and teams to create visual identities that
+              truly connect.
+            </h5>
+          </div>
+        </div>
+        <div id="projects">
+          <div class="project">
+          <div class="img">
+            <img src="./assets/dream.avif" alt="" />
+          </div>
+          <div class="text">
+            <div>
+              <h4>Dream Area</h4>
+              <p>
+                The image shows flowing shapes in iridescent hues, from deep
+                blues and purples to vibrant pinks and oranges, creating an
+                ethereal effect.
+              </p>
+              <button class="btn">
+                View <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="text">
+            <div>
+              <h4>Orange Blox</h4>
+              <p>
+                The image shows flowing shapes in iridescent hues, from deep
+                blues and purples to vibrant pinks and oranges, creating an
+                ethereal effect.
+              </p>
+              <button class="btn">
+                View <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+          <div class="img">
+            <img src="./assets/orange.avif" alt="" />
+          </div>
+        </div>
+        <div class="project">
+          <div class="img">
+            <img src="./assets/nova.avif" alt="" />
+          </div>
+          <div class="text">
+            <div>
+              <h4>Nova Scene</h4>
+              <p>
+                The image shows flowing shapes in iridescent hues, from deep
+                blues and purples to vibrant pinks and oranges, creating an
+                ethereal effect.
+              </p>
+              <button class="btn">
+                View <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="section-4">
+        <div id="content">
+          <div class="left">
+            <h5>Intentional. Collaborative. Built to Last.</h5>
+            <h2>How I Approach Every Project</h2>
+          </div>
+          <div class="right">
+            <h5>
+              I design with clarity and purpose—blending strategy and style to
+              build brands that look great and work everywhere.
+            </h5>
+          </div>
+        </div>
+        <div id="grid">
+          <div class="img1 img">
+            <div class="text">
+              <div class="line"></div>
+              <h2>Strategy First</h2>
+
+              <p>
+                Every design decision is rooted in a clear brand strategy. No
+                guesswork.
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="text">
+              <div class="line"></div>
+              <h2>Design That Resonates</h2>
+
+              <p>Visuals that connect emotionally and communicate clearly.</p>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="text">
+              <div class="line"></div>
+              <h2>Future-Proof Systems</h2>
+
+              <p>Design that’s flexible, scalable, and easy to use.</p>
+            </div>
+          </div>
+          <div class="img2 img">
+            <div class="text">
+              <div class="line"></div>
+              <h2>Consistency Across Touch points</h2>
+
+              <p>
+                From logo to social templates, I help you stay on-brand
+                everywhere.
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <div id="contact">
+          <div class="card">
+            <h5>Contact Us</h5>
+            <form>
+              <div>
+              <label for="name">Name</label>
+              <input placeholder="john" type="text" id="name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input placeholder="john@email.com" type="text" id="email">
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea placeholder="Type your message..." id="message"></textarea>
+            </div>
+              <a >Submit</a>
+            </form>
+          </div>
+      </div>
+
+      <footer>
+        <h1>Folioblox®</h1>
+      </footer>
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
